@@ -1,0 +1,9 @@
+markdown: rdiscount
+permalink: /:year/:month/:day/:title/
+url: http://cjie.github.com
+author: cjie
+pygments: true
+safe: true
+paginate: 16
+auto: true
+
