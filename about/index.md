@@ -20,8 +20,8 @@ github : [cjie](http://cjie.github.com)
 
 [![新浪微博](http://service.t.sina.com.cn/widget/qmd/1673924241/1bf42c7d/1.png)](http://weibo.com/u/1673924241?s=6uyXnP)
 
-
+<div align="center" >
 <script type="text/javascript" src="http://www.douban.com/service/badge/mydreamly/?show=collection&amp;n=8&amp;columns=4&amp;hidelogo=yes" ></script>
-
+</div>
 
 
