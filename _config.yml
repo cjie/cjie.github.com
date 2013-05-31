@@ -1,6 +1,6 @@
 markdown: rdiscount
 permalink: /:year/:month/:day/:title/
-url: http://cjie.github.com
+url: http://cjie.github.io
 author: cjie
 pygments: true
 safe: true

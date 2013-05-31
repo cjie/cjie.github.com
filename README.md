@@ -1,3 +1,3 @@
-欢迎光临我的[博客](http://blog.lequ.org)
+欢迎光临我的[博客](http://cjie.github.io)
 
 

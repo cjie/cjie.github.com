@@ -11,9 +11,9 @@ comments: no
 
 ###联系方式：        
 
-个人邮箱: [email](mailto:jeff@lequ.org)     
+个人邮箱: [Email](mailto:jeff@lequ.org)     
 新浪微博: [心是梦开始的地方](http://weibo.com/u/1673924241)	 
-github : [cjie](http://cjie.github.com)        
+github : [cjie](http://cjie.github.io)        
 
 ----
 
