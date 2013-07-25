@@ -3,6 +3,7 @@ layout: post
 title: "Githug通关攻略"
 categories:
 tags: git
+
 ---
 
 [Githug](https://github.com/Gazler/githug)是一个很棒的git学习工具，通过有趣的闯关游戏即可轻松学习各种常见的git命令。
@@ -77,3 +78,70 @@ tags: git
     git status
     git rm --cached oldfile.txt
     git add newfile.txt
+
+**Level 13** 查看提交历史
+
+    git log
+
+我输入的`git show`也可以看到。
+
+**Level 14** 给当前repo加标签
+
+    git tag new_tag
+
+其他用法：
+
+- `git tag tagname 1b2e1d63ff`：为指定的commit打tag
+
+
+**Level 15** 修改最后一次提交
+
+    git status
+    git add forgotten_file.rb
+    git commit --amend -m "add forgotten_file"
+
+amend选项提供了最后一次commit的反悔机会，但是如果最后一次提交已经push过了，那么就不能修改了。对于历史提交，只能使用rebase了。
+
+**Level 16** 将文件从暂存区删除
+
+    git status
+    git reset HEAD to_commit_second.rb
+
+`git reset HEAD <file>`命令可以将文件从暂存区删除，经过我测试并不会修改工作区，网上有些文章信息错误。
+
+`git reset [--hard|soft|mixed|merge|keep] [<commit>或HEAD]`命令有好几种模式：
+
+- `--hard`：重设`暂存区`和`工作区`；
+- `--soft`：`暂存区`和`工作区`内容不做改变，仅仅把`HEAD`指向`<commit>`，执行效果是，自从`<commit>`以来的所有改变都放入`暂存区`，相当于撤销commit；
+- `--mixed`：这个是默认模式。仅重设`暂存区`，不会修改`工作区`；
+- `--merge`和`--keep`暂未研究。
+
+reset命令用法刚开始理解起来有点绕，我又找了一个解释：
+
+- reset命令把当前分支指向另一个位置，并且有选择的变动工作区和暂存区。也用来在从历史仓库中复制文件到暂存区，而不动工作区。
+- 如果不给选项，那么当前分支指向到那个提交。
+- 如果用--hard选项，那么工作目录也更新。
+- 如果用--soft选项，那么都不变。
+- 如果不给提交号，那么默认用HEAD。例如，`git reset`等价于`git reset --mixed HEAD`。
+- 如果给了文件名，效果和带文件名的checkout差不多，除了索引被更新。例如`git reset -- files`。
+
+
+**Level 17** 撤销最后一次提交，保留当前暂存区不变
+
+    git log
+    git reset --soft HEAD~1
+
+或者`git reset --soft HEAD^`，尼玛，HEAD后面加一个`^`符号是啥意思我咋没找到！
+
+**Level 18** 撤销工作区文件的修改
+
+    git checkout -- config.rb
+
+
+
+----
+
+参考文献：
+
+- 图解Git： <http://marklodato.github.io/visual-git-guide/index-zh-cn.html>
+- Githug通关全攻略： <http://fancyoung.com/blog/githug-cheat-sheet/>
