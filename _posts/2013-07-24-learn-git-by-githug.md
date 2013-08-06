@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Githug通关攻略"
-categories:
+categories: tech
 tags: git
 
 ---
@@ -137,6 +137,76 @@ reset命令用法刚开始理解起来有点绕，我又找了一个解释：
 
     git checkout -- config.rb
 
+尼玛，checkout命令后面加两个`--`是啥意思？
+
+**Level 19** 查看远程repo名称
+
+    git remote -v
+
+可知远程repo名称为`my_remote_repo`。
+	
+其他用法：
+
+查看remote url：
+
+    git remote -v
+
+设置remote url：
+
+    git remote set-url origin https://github.com/user/repo2.git
+
+git中配置参数：
+
+    git config user.name xxx
+    git config user.email xxx@xxx.com
+
+git中获取参数值：
+
+    git config --get user.name
+    git config --get user.email
+
+**Level 20** 查看远程repo URL
+
+    git remote -v
+
+**Level 21** 从远程repo中pull代码
+
+这题有bug吧？输入`git remote -v`发现没有设置URL啊！坑爹啊，如何PULL？我只好去看了下githug此关的源代码，找到这个URL手工设置了一把：
+
+    git remote set-url origin https://github.com/pull-this/thing-to-pull
+
+如此一来即可pull了：
+
+    git pull origin master
+
+搞定！
+
+**Level 22** 设置Remote URL
+
+    git remote set-url origin https://github.com/githug/githug
+
+或者
+
+    git remote add origin https://github.com/githug/githug
+
+**Level 23** rebase
+
+劳资用的这githug是不是有问题啊，为毛又没有remote url！这让人怎么搞！
+
+git rebase相关用法：
+
+    git rebase origin
+    git rebase origin/master
+
+如果rebase的过程中有冲突，git会停止rebase并让你解决冲突，解决冲突完成后，用`git add`命令去更新暂存区，然后无需执行`git commit`，只要执行：
+
+    git rebase --continue
+
+如果要放弃rebase，执行：
+
+    git rebase --abort
+
+参考这篇[“git rebase”](http://gitbook.liuhui998.com/4_2.html)，写得比较清楚。
 
 
 ----
@@ -145,3 +215,4 @@ reset命令用法刚开始理解起来有点绕，我又找了一个解释：
 
 - 图解Git： <http://marklodato.github.io/visual-git-guide/index-zh-cn.html>
 - Githug通关全攻略： <http://fancyoung.com/blog/githug-cheat-sheet/>
+- Git Community Book：<http://gitbook.liuhui998.com/index.html>

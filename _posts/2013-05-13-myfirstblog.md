@@ -3,7 +3,7 @@ layout: post
 title: "第一篇博客"
 description: "第一篇博客"
 category: essay
-tags: []
+tags: blog
 ---
 
 喜欢Github、Markdown的简洁和优雅。
