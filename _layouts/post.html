@@ -2,6 +2,15 @@
 layout: default
 ---
 
+<span class="author">
+  <a href="http://cjie.github.com">{{ site.author }}</a>
+</span>
+<span class="time">
+  /
+  <time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>
+</span>
+<br/>
+
 <section class="post">
 {{ content }}
 </section>
