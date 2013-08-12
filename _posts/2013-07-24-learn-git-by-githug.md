@@ -133,11 +133,25 @@ reset命令用法刚开始理解起来有点绕，我又找了一个解释：
 
 或者`git reset --soft HEAD^`，尼玛，HEAD后面加一个`^`符号是啥意思我咋没找到！
 
+求教StackOverflow，[这里](http://stackoverflow.com/questions/1955985/)找到答案。
+
+好吧，`^`表示"the parent of..."，可能有多个parent，默认表示第一个parent，还可用`<rev>^1`或者`<rev>^2`来指定。
+
+那么`^`和`~`有什么区别？`~`是表示多级父亲的，`<rev>~3`等价于`<rev>^^^`和`<rev>^1^1^1`。
+
 **Level 18** 撤销工作区文件的修改
 
     git checkout -- config.rb
 
 尼玛，checkout命令后面加两个`--`是啥意思？
+
+考究了下，再一次在StackOverflow[这里](http://stackoverflow.com/questions/2531204/)找到了答案，StackOverflow是万能的！
+
+`--`表示是分隔符。例如，
+
+    git checkout [-f|--ours|--theirs|-m|--conflict=<style>] [<tree-ish>] [--] <paths>... 
+
+这样一个命令，如果没有`--`作为分隔符，那么命令就可能会产生歧义，比如`git checkout config.rb`中的`config.rb`到底是表示`<tree-ish>`呢还是`<paths>`呢？
 
 **Level 19** 查看远程repo名称
 
@@ -196,7 +210,7 @@ git中获取参数值：
 git rebase相关用法：
 
     git rebase origin
-    git rebase origin/master
+    或者 git rebase origin/master
 
 如果rebase的过程中有冲突，git会停止rebase并让你解决冲突，解决冲突完成后，用`git add`命令去更新暂存区，然后无需执行`git commit`，只要执行：
 
@@ -211,7 +225,7 @@ git rebase相关用法：
 
 ----
 
-参考文献：
+**参考文献：**
 
 - 图解Git： <http://marklodato.github.io/visual-git-guide/index-zh-cn.html>
 - Githug通关全攻略： <http://fancyoung.com/blog/githug-cheat-sheet/>
