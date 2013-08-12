@@ -10,18 +10,22 @@ comments: no
 ----
 
 ###联系方式：        
-
-个人邮箱: [Email](mailto:jeff@lequ.org)     
+    
 新浪微博: [心是梦开始的地方](http://weibo.com/u/1673924241)	 
-github : [cjie](http://cjie.github.io)        
+Github : <https://github.com/cjie>    
 
 ----
 
+###微博：  
 
 [![新浪微博](http://service.t.sina.com.cn/widget/qmd/1673924241/1bf42c7d/1.png)](http://weibo.com/u/1673924241?s=6uyXnP)
 
+----
+
+###豆瓣： 
+
 <div align="center" >
-<script type="text/javascript" src="http://www.douban.com/service/badge/mydreamly/?show=collection&amp;n=8&amp;columns=4&amp;hidelogo=yes" ></script>
+<script type="text/javascript" src="http://www.douban.com/service/badge/mydreamly/?show=collection&amp;select=random&amp;n=8&amp;columns=4&amp;hidelogo=yes" ></script>
 </div>
 
 
