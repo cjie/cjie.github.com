@@ -9,7 +9,7 @@ tags: Android
 
 ### Android Launcher是神马？
 
-Launcher俗称Home Screen，也就是我们启动Android系统后第一眼看到的应用程序。也许不一定很准确，但我也把它叫做桌面程序。
+Launcher俗称Home Screen，也就是我们启动Android系统后第一眼看到的应用程序。也许不完全准确，但我也把它叫做桌面程序。
 
 Android太开放了，在Android上开发者可以很容易就开发一个自己的桌面程序，和系统自带的桌面地位一致，然后交给用户来选择使用哪一个。Android真是太开放了，简直是奔放，这在iOS中难以想象。
 
