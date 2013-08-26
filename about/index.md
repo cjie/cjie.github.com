@@ -11,8 +11,8 @@ comments: no
 
 ###联系方式：        
     
-新浪微博: [心是梦开始的地方](http://weibo.com/u/1673924241)	
-个人主页：<http://chenjie.me> 
+新浪微博: [心是梦开始的地方](http://weibo.com/u/1673924241)	  
+个人主页：<http://chenjie.me>   
 Github : <https://github.com/cjie>    
 
 ----
