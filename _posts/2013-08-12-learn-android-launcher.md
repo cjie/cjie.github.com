@@ -32,6 +32,8 @@ Launcher程序一般比较复杂，其地位也相当重要。入口嘛！互联
 选择`com.miui.home.launcher.Launcher`，则可显示出小米Launcher的布局结构：
 
 ![hierarchy_viewer_pixel_perfect_window_list](/assets/images/learn-android-launcher/hierarchy_viewer_pixel_perfect_window_list.jpg)
+
+
 ----------
 
 参考文献：
