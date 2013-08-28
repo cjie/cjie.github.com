@@ -56,7 +56,7 @@ Launcher程序一般比较复杂，其地位也相当重要。入口嘛！互联
 
 ![one_element_position](/assets/images/learn-android-launcher/one_element_position.jpg)
 
-正看一个腾讯视频HD版的布局结构，这个布局比优酷的简单和清晰，优酷的那个界面有些复杂。
+再看一个腾讯视频HD版的布局结构，这个布局比优酷的简单和清晰，优酷的那个界面有些复杂。
 
 ![qqlivehd_view_hierarchy_overview](/assets/images/learn-android-launcher/qqlivehd_view_hierarchy_overview.jpg)
 
