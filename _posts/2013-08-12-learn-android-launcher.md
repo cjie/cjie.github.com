@@ -13,7 +13,7 @@ Launcher俗称Home Screen，也就是我们启动Android系统后第一眼看到
 
 Android太开放了，在Android上开发者可以很容易就开发一个自己的桌面程序，和系统自带的桌面地位一致，然后交给用户来选择使用哪一个。Android真是太开放了，简直是奔放，这在iOS中难以想象。
 
-Launcher程序一般比较复杂，其地位也相当重要。入口嘛！互联网都讲究入口。Facebook之前也推出了其[Facebook Home][]应用，试图占领用户手机入口，但貌似不太成功，在Google Play上只获得2.5星的评价，悲剧。
+Launcher程序一般比较复杂，其地位也相当重要。入口嘛！互联网都讲究入口。Facebook之前也推出了名为[Facebook Home][]的Launcher应用，试图占领用户手机入口，但貌似不太成功，在Google Play上只获得2.5星的评价，悲剧。主要原因也许是Facebook只重点关注了社交相关功能，但作为Launcher还不够全面。
 
 现在OTT机顶盒越来越流行，各家机顶盒一般都有自己定制的UI界面，如果能做出一个体验较好的通用的Android机顶盒Launcher应用来，支持装在各家机顶盒和智能电视中，也许这个会有不错的市场吧！重点是有想象空间，参考百度19亿美金收购91，据说电视屏是目前唯一还没有被巨头垄断的入口了！
 
@@ -38,7 +38,7 @@ Launcher程序一般比较复杂，其地位也相当重要。入口嘛！互联
 > The standalone version of hieararchyviewer is deprecated.
 > Please use Android Device Monitor (tools/monitor.bat) instead.
 
-目前不建议单独运行此程序了，这些功能都被集成到Android Debug Monitor工具中，里面提供更全面更强大的工具集合。
+目前不建议单独运行此程序了，这些功能都被集成到Android Device Monitor工具中，里面提供更全面更强大的工具集合。
 
 再选择`com.youku.phone/com.youku.ui.activity.HomePageActivity`，则可显示出优酷手机版的布局结构：
 
@@ -56,6 +56,11 @@ Launcher程序一般比较复杂，其地位也相当重要。入口嘛！互联
 
 ![one_element_position](/assets/images/learn-android-launcher/one_element_position.jpg)
 
+正看一个腾讯视频HD版的布局结构，这个布局比优酷的简单和清晰，优酷的那个界面有些复杂。
+
+![qqlivehd_view_hierarchy_overview](/assets/images/learn-android-launcher/qqlivehd_view_hierarchy_overview.jpg)
+
+
 
 ----------
 
@@ -69,5 +74,5 @@ the tip of the iceberg 冰山一角
 
 - Android官方文档 Optimizing Your UI：<https://developer.android.com/tools/debugging/debugging-ui.html>
 
-[Facebook Home]: <https://developer.android.com/tools/help/hierarchy-viewer.html>  "Facebook Home"
+[Facebook Home]: <https://play.google.com/store/apps/details?id=com.facebook.home>  "Facebook Home"
 [Hierarchyviewer]: <https://developer.android.com/tools/help/hierarchy-viewer.html>  "Hierarchy Viewer"
